@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PC Builder Showcase</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Fill out the form below to get in touch.</p>
+
+    <form action="#" method="post"> <!-- The 'action' attribute should point to your server-side script -->
+        <fieldset>
+            <legend>Your Information</legend>
+
+            <label for="name">Your Name (text):</label>
+            <input type="text" id="name" name="user_name" required><br><br>
+
+            <label for="email">Your Email (email):</label>
+            <input type="email" id="email" name="user_email" required><br><br>
+
+            <label for="password">Password (password - for demonstration):</label>
+            <input type="password" id="password" name="user_password"><br><br>
+
+            <label for="tel">Phone Number (tel):</label>
+            <input type="tel" id="tel" name="user_phone"><br><br>
+
+            <label for="url">Your Website (url):</label>
+            <input type="url" id="url" name="user_website"><br><br>
+
+            <label for="search">Search our site (search):</label>
+            <input type="search" id="search" name="search_query"><br><br>
+
+            <label for="quantity">Quantity (number, between 1 and 10):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+
+            <label for="volume">Volume (range slider, 0-100):</label>
+            <input type="range" id="volume" name="volume" min="0" max="100"><br><br>
+
+            <label for="birthday">Birthday (date):</label>
+            <input type="date" id="birthday" name="user_birthday"><br><br>
+
+            <label for="event_datetime">Event Date and Time (datetime-local):</label>
+            <input type="datetime-local" id="event_datetime" name="event_datetime"><br><br>
+
+            <label for="appointment_time">Appointment Time (time):</label>
+            <input type="time" id="appointment_time" name="appointment_time"><br><br>
+
+            <label for="birth_month">Birth Month (month):</label>
+            <input type="month" id="birth_month" name="birth_month"><br><br>
+
+            <label for="delivery_week">Delivery Week (week):</label>
+            <input type="week" id="delivery_week" name="delivery_week"><br><br>
+
+            <label for="inquiry_type">Reason for Inquiry (select):</label>
+            <select id="inquiry_type" name="inquiry_reason">
+                <option value="general">General Inquiry</option>
+                <option value="sales">Sales Question</option>
+                <option value="support">Technical Support</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+            <label>Gender (radio buttons):</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label>Interests (checkboxes):</label><br>
+            <input type="checkbox" id="gaming" name="interest_gaming" value="gaming">
+            <label for="gaming">Gaming</label><br>
+            <input type="checkbox" id="workstation" name="interest_workstation" value="workstation">
+            <label for="workstation">Workstation</label><br>
+            <input type="checkbox" id="custom_build" name="interest_custom" value="custom">
+            <label for="custom_build">Custom Builds</label><br><br>
+
+            <label for="upload_file">Upload File (file):</label>
+            <input type="file" id="upload_file" name="user_file"><br><br>
+
+            <!-- Hidden field for tracking purposes (not visible to user) -->
+            <input type="hidden" name="form_version" value="2.0">
+           
+
+            <input type="image" src="pics\Submit-Button.png" alt="Submit Form" width="100" height="50"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="message">Message (textarea):</label>
+            <textarea id="message" name="user_message" rows="8" required></textarea><br><br>
+        </fieldset>
+        
+        <input type="button" value=" Message Button " onclick="alert('This button does Nothing!😜')"><br><br>
+        <button type="submit">Submit Message</button>
+        <input type="reset" value="Reset Form">
+    </form>
+
+    <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
